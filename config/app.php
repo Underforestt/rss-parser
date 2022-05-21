@@ -185,6 +185,7 @@ return [
         /*
          * Package Service Providers...
          */
+        Vedmant\FeedReader\FeedReaderServiceProvider::class,
 
         /*
          * Application Service Providers...
@@ -194,6 +195,7 @@ return [
         // App\Providers\BroadcastServiceProvider::class,
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
+        App\Providers\ParserServiceProvider::class
 
     ],
 
@@ -209,7 +211,7 @@ return [
     */
 
     'aliases' => Facade::defaultAliases()->merge([
-        // 'ExampleClass' => App\Example\ExampleClass::class,
+        'FeedReader' => Vedmant\FeedReader\Facades\FeedReader::class,
     ])->toArray(),
 
 ];
