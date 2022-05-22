@@ -29,5 +29,6 @@ class Parse extends Command
     public function handle(IParser $parser): void
     {
         $parser->parse($this->argument('url'));
+        $this->info("Parsing complete.");
     }
 }

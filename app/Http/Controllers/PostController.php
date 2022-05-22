@@ -30,6 +30,6 @@ class PostController extends Controller
 
     public function delete(Post $post){
         $post->delete();
-        return response(->json(null, 204);
+        return response()->json(null, 204);
     }
 }
