@@ -9,6 +9,10 @@ use Illuminate\Http\Request;
 
 class PostController extends Controller
 {
+    public function index(){
+        $posts = Post::all();
+        return response()->json($posts);
+    }
     public function create(StorePostRequest $request){
         $time = Carbon::now();
         $post = Post::create([
@@ -25,7 +29,7 @@ class PostController extends Controller
 
     public function update(StorePostRequest $request, Post $post){
         $post->update($request->all());
-        return response()->json($post, 200);
+        return response()->json($post);
     }
 
     public function delete(Post $post){
