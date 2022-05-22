@@ -1,1 +1,1 @@
-create database if not exists jquery-app;
+create database if not exists rss-parser;

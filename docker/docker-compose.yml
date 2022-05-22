@@ -20,8 +20,9 @@ services:
     container_name: parser-db
     restart: unless-stopped
     environment:
-      - MYSQL_DATABASE=${DB_DATABASE}
+      - MYSQL_DATABASE=rss-parser
       - MYSQL_ALLOW_EMPTY_PASSWORD=1
+      - MYSQL_USERNAME=root
       - SERVICE_TAGS=dev
       - SERVICE_NAME=mysql
     ports:
