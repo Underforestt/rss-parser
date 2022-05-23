@@ -6,12 +6,10 @@ Clone the repository
 git clone https://github.com/Underforestt/rss-parser.git
 ```
 
-Create .env file and generate app key
+Create .env file
 ```bash
 touch .env
 cp .env.example .env
-php artisan key generate
-
 ```
 
 Build docker containers
