@@ -17,7 +17,10 @@ make up
 ```
 
 ## API docs
-Now you can check [api documentation](http//:localhost:8000/api/documentation)
+Now you can check api documentation on this URL
+```http request
+    http://localhost:8000/api/documentation
+```
 
 ## Other makefile commands
 
