@@ -1,4 +1,4 @@
-#RSS-Parser
+# RSS-Parser
 ## Installation
 
 Clone the repository
@@ -16,10 +16,10 @@ Raise containers
 make up
 ```
 
-##API docs
+## API docs
 Now you can check [api documentation](http//:localhost:8000/api/documentation)
 
-##Other makefile commands
+## Other makefile commands
 
 Start scheduled worker to parse lifehacker.com
 ```bash
