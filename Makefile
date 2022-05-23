@@ -9,8 +9,7 @@ up:
     docker-compose exec app php artisan migrate:refresh; \
     docker-compose exec app php artisan cache:clear; \
     docker-compose exec app php artisan view:clear; \
-    docker-compose exec app php artisan config:clear; \
-    docker-compose exec app php artisan schedule:work
+    docker-compose exec app php artisan config:clear
 
 down:
 	cd docker; \
